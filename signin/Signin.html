@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="The Page Description">
+		<style type="text/css">@-ms-viewport{width: device-width;}</style>
+		<title>GiveHabit - Pay the web you like</title>
+		<link rel="stylesheet" href="css/layers.min.css" media="screen">
+		<link rel="stylesheet" href="css/font-awesome.min.css" media="screen"> 
+		<link rel="stylesheet" href="style.css" media="screen">
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+		<link rel="icon" href="favicon.ico">		
+	</head>
+
+	<body class="page">
+    
+			<div id="main">
+                <div style="margin: 50px 0 0 300px;"><img src="img/logotype.png" /> </div>
+            <section class="row section" style="background-color:fff;">
+                <div class="row-content buffer even clear-after">
+                    <div class="section-title"><h3>Register your site with GiveHabit</h3></div>
+                        <form id="contact-form" class="contact-section" method="post" action="">
+                        <span class="pre-input"><i class="fa fa-user"></i></span>
+                        <input class="name plain buffer" type="text" name="name" placeholder="Your name">
+                        <span class="pre-input"><i class="fa fa-btc"></i></span>
+                        <input class="name plain buffer" type="text" name="wallet" placeholder="Bitcoin wallet address">
+                        <span class="pre-input"><i class="fa fa-envelope-o"></i></span>
+                        <input class="name plain buffer" type="text" name="url" placeholder="Website URL">
+                         <span class="pre-input"><i class="fa fa-tags"></i></span>
+                        <input class="name plain buffer" type="text" name="tags" placeholder="Tags">
+                        <span class="pre-input"><i class="fa fa-link"></i></span>
+                        <input class="name plain buffer" type="text" name="mail" placeholder="Your email address">
+                        <span class="pre-input"><i class="fa fa-facebook"></i></span>
+                        <input class="name plain buffer" type="text" name="facebook" placeholder="Facebook account">
+                        <span class="pre-input"><i class="fa fa-twitter"></i></span>
+                        <input class="name plain buffer" type="text" name="twitter" placeholder="Twitter acount">
+                        <input id="send" class="plain button yelow" type="button" value="Sign-up">
+                        </form>
+                </div>
+            </section>
+
+			</div><!-- id-main -->
+		</main><!-- main -->
+
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>		
+		<script src="js/plugins.js"></script>
+		<script src="js/beetle.js"></script>
+        <script src="js/jquery.countdown.min.js"></script>
+        <script src="js/url2img.js"></script>
+        <script type="text/javascript">
+		  $('#getting-started').countdown('2015/03/30', function(event) {
+			$(this).html(event.strftime('%w weeks %d days %H:%M:%S'));
+		  });
+		</script>
+
+	</body>
+
+</html>
