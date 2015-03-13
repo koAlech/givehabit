@@ -121,7 +121,7 @@
 			$walletAddress = $walletAddressQuery[0]['walletAddress'];
 
     		$wallet->pay(array($walletAddress => $cpDeposit));
-    		DB::update('impressions', array('paid' => 1), "userId=%i and cpId=%i and paid=0", $userId, $cpId);
+    		DB::update('impressions', array('paid' => 1), "userId=%i and paid=0", $userId);
 
     		$paymentDone = true;
 		}
