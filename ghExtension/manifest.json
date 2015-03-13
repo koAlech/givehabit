@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "givehabit - The best app in the world! OMGWTF!?",
+  "description": "Yolo McSwaggen",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": {
+      "19": "/extra/icon19.png",
+      "38": "/extra/icon76.png"
+    },
+    "default_popup": "banana.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://www.etgalim.com"],
+      "js": ["angular.min.js", "background.js"]
+    }
+  ],
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "https://ajax.googleapis.com/",
+    "http://www.etgalim.com",
+    "http://192.168.12.11/ghServer/index.php/ping"
+  ]
+}
