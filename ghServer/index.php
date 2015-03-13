@@ -32,15 +32,19 @@
 
 		$registeredCp = false;
 
-		$results = DB::query("SELECT siteRegex FROM contentProviderSites");
+		$results = DB::query("SELECT siteRegex, cpId FROM contentProviderSites");
 		foreach ($results as $row) {
 			$siteRegex = $row['siteRegex'];
 			$pos = strpos($url, $siteRegex);
 
 			if ($pos !== false) {
 				$registeredCp = true;
-				// $cpId = $row['cpId'];
-				//TODO write impression in database
+				$cpId = $row['cpId'];
+				
+				DB::insert("impressions", array(
+					'userId' => $userId,
+					'cpId' => $cpId
+					));
 				break;
 			}
 		}
