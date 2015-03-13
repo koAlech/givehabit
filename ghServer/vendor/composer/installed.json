@@ -1,0 +1,143 @@
+[
+    {
+        "name": "slim/slim",
+        "version": "2.6.2",
+        "version_normalized": "2.6.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/slimphp/Slim.git",
+            "reference": "20a02782f76830b67ae56a5c08eb1f563c351a37"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/slimphp/Slim/zipball/20a02782f76830b67ae56a5c08eb1f563c351a37",
+            "reference": "20a02782f76830b67ae56a5c08eb1f563c351a37",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "suggest": {
+            "ext-mcrypt": "Required for HTTP cookie encryption"
+        },
+        "time": "2015-03-08 18:41:17",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Slim": "."
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Josh Lockhart",
+                "email": "info@joshlockhart.com",
+                "homepage": "http://www.joshlockhart.com/"
+            }
+        ],
+        "description": "Slim Framework, a PHP micro framework",
+        "homepage": "http://github.com/codeguy/Slim",
+        "keywords": [
+            "microframework",
+            "rest",
+            "router"
+        ]
+    },
+    {
+        "name": "entomb/slim-json-api",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/entomb/slim-json-api.git",
+            "reference": "b2f884d4a4a564bad3da3701e0db1a3011cfcdeb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/entomb/slim-json-api/zipball/b2f884d4a4a564bad3da3701e0db1a3011cfcdeb",
+            "reference": "b2f884d4a4a564bad3da3701e0db1a3011cfcdeb",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2015-01-23 11:55:57",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "jsonAPI/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL 3.0"
+        ],
+        "authors": [
+            {
+                "name": "Jonathan Tavares",
+                "email": "the.entomb@gmail.com",
+                "homepage": "https://github.com/entomb",
+                "role": "Developer"
+            }
+        ],
+        "description": "Slim extension to implement fast JSON API's",
+        "homepage": "https://github.com/entomb/slim-json-api",
+        "keywords": [
+            "api",
+            "json",
+            "middleware",
+            "slim",
+            "view"
+        ]
+    },
+    {
+        "name": "sergeytsalkov/meekrodb",
+        "version": "v2.3",
+        "version_normalized": "2.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/SergeyTsalkov/meekrodb.git",
+            "reference": "eb36858f1aff94ae1665900e681a1cfb78563ee1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/SergeyTsalkov/meekrodb/zipball/eb36858f1aff94ae1665900e681a1cfb78563ee1",
+            "reference": "eb36858f1aff94ae1665900e681a1cfb78563ee1",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.0"
+        },
+        "time": "2014-06-16 22:40:22",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "db.class.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-3.0"
+        ],
+        "authors": [
+            {
+                "name": "Sergey Tsalkov",
+                "email": "stsalkov@gmail.com"
+            }
+        ],
+        "description": "The Simple PHP/MySQL Library",
+        "homepage": "http://www.meekro.com",
+        "keywords": [
+            "database",
+            "mysql",
+            "mysqli",
+            "pdo"
+        ]
+    }
+]
