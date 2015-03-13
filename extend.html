@@ -17,15 +17,16 @@
 		<link rel="icon" href="favicon.ico">		
 	</head>
 
-	<body class="page">
-    
-			<div id="main">
+	<body class="page" onload="loadData()">
+
+			<div id="main" >
+                <div style="margin: 50px 0 0 300px;"><img src="img/logotype.png" /> </div>
             <section class="row section">
                 <div class="row-content buffer even clear-after">
                     <div class="section-title"><h3>Monthly GiveHabit:</h3></div>
                         <form id="contact-form" class="contact-section" method="post" action="">
                         <span class="pre-input"><i class="fa fa-btc"></i></span>
-                        <input class="name plain buffer" type="text" value="30" name="name" placeholder="Monthly GiveHabit">
+                        <input class="name plain buffer" type="text" value="0.0343" name="name" placeholder="Monthly GiveHabit">
                         <input id="send" class="plain button red" type="button" value="Update">
                         </form>
                 </div>
@@ -37,7 +38,9 @@
                      <div class="section-title"><h3>Next Payout in:</h3></div>
 						<div class="slogan">
                             <h2><div id="getting-started"></div></h2>
-                            <div class="more-btn"><a class="button transparent aqua" href="#">Pay Now</a></div>					
+                            <div class="more-btn">
+                                <div id="lePay" class="button transparent aqua" onclick="payMe()">Pay Now</div>
+                            </div>
                         </div><!-- slogan -->
                     </div>	
 				</section>
@@ -48,28 +51,28 @@
 						<div class="column three">
 							<div class="count-item">
 								<!-- <div class="small-icon red"><i class="icon icon-leaf"></i></div> -->
-								<div class="count-number" data-from="0" data-to="1284" data-speed="1000" data-refresh-interval="25"></div>
+								<div id="catDesign" class="count-number" data-from="0" data-to="" data-speed="1000" data-refresh-interval="25"></div>
 								<div class="count-subject">Design Websites</div>
 							</div><!-- count-item -->
 						</div>
 						<div class="column three">
 							<div class="count-item">
 								<!-- <div class="small-icon red"><i class="icon icon-heart"></i></div> -->
-								<div class="count-number" data-from="0" data-to="798" data-speed="1500" data-refresh-interval="25"></div>
+								<div id="catTechnology" class="count-number" data-from="0" data-to="" data-speed="1500" data-refresh-interval="25"></div>
 								<div class="count-subject">Technology Websites</div>
 							</div><!-- count-item -->
 						</div>
 						<div class="column three">
 							<div class="count-item">
 								<!-- <div class="small-icon red"><i class="icon icon-tshirt"></i></div> -->
-								<div class="count-number" data-from="0" data-to="326" data-speed="2000" data-refresh-interval="25"></div>
+								<div id="catArt" class="count-number" data-from="0" data-to="" data-speed="2000" data-refresh-interval="25"></div>
 								<div class="count-subject">Art Websites</div>
 							</div><!-- count-item -->
 						</div>
 						<div class="column three last">
 							<div class="count-item">
 								<!-- <div class="small-icon red"><i class="icon icon-graph"></i></div> -->
-								<div class="count-number" data-from="0" data-to="198" data-speed="2500" data-refresh-interval="25"></div>
+								<div id="catVideo" class="count-number" data-from="0" data-to="" data-speed="2500" data-refresh-interval="25"></div>
 								<div class="count-subject">Video/Music Artists</div>
 							</div><!-- count-item -->
 						</div>
@@ -86,6 +89,7 @@
 		<script src="js/beetle.js"></script>
         <script src="js/jquery.countdown.min.js"></script>
         <script src="js/url2img.js"></script>
+            <script src="js/payment.js"></script>
         <script type="text/javascript">
 		  $('#getting-started').countdown('2015/03/30', function(event) {
 			$(this).html(event.strftime('%w weeks %d days %H:%M:%S'));
