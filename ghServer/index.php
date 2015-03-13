@@ -42,6 +42,7 @@
 				$cpId = $row['cpId'];
 				
 				DB::insert("impressions", array(
+					'url' => $url,
 					'userId' => $userId,
 					'cpId' => $cpId
 					));
