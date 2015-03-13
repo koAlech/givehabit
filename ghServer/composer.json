@@ -2,6 +2,7 @@
     "require": {
         "slim/slim": "~2.6",
         "entomb/slim-json-api": "dev-master",
-        "sergeytsalkov/meekrodb": "*"
+        "sergeytsalkov/meekrodb": "*",
+        "blocktrail/blocktrail-sdk": "1.2.9"
     }
 }
