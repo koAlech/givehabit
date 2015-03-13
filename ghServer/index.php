@@ -140,4 +140,11 @@
     	$app->render(200,$array);
     });
 
+    $app->get('/reset', function() use ($app) {
+    	DB::update('impressions', array('paid' => 0), "paid=1");
+    	$app->render(200,array(
+    		'success' => true
+    	));
+    });
+
 	$app->run();
